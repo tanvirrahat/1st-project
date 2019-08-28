@@ -1,0 +1,250 @@
+* {
+    
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.header {
+    background-color: #3D5A99;
+    color: white;
+    padding: 10px;
+}
+.header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.container {
+    width: 66%;
+    margin: auto;
+}
+.logo-area {
+    float: left;
+    width: 30%;
+}
+.logo-area img {
+    width: 170px;
+    margin-top: 20px;
+}
+.login-area {
+    float: left;
+    width: 70%;
+}
+.login-area form {
+    float: right;
+}
+.login-area .email-area,
+.login-area .password-area,
+.login-area .login {
+    float: left;
+}
+.login-area label,
+.login-area input[type="text"],
+.login-area input[type="password"]
+{
+    display: block;
+    margin-right: 15px;
+    font-size: 12px;
+    margin-top: 4px
+}
+.login-area input[type="text"],
+.login-area input[type="password"] {
+    width: 142px;
+    padding: 4px 3px;
+    border: 1px solid black;
+}
+
+.password-area a {
+    text-decoration: none;
+    color: #9cb4d8;
+    font-weight: normal;
+    font-size: 12px;
+}
+.password-area a:hover {
+    text-decoration: underline;
+}
+.login-area input[type="submit"] {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-top: 27px;
+}
+/***************End of Header Section****************/
+
+.main {
+    background: linear-gradient(white, #D3D8E8);
+    width: 100%;
+    min-height: 600px;
+    box-sizing: border-box;
+}
+.main::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.main-left {
+    float: left;
+    width: 54%;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+.main-right {
+    float: left;
+    width: 45%; 
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+.main-left .main-content {
+    
+}
+.main-left .main-content h2 {
+    color: #0e385f;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    margin-top: 35px;
+}
+.main-left .main-image {
+    
+}
+.main-left .main-image img {
+    width: 100%;
+}
+.main-right-heading {
+    
+}
+.main-right-heading h1 {
+    margin-bottom: 0;
+}
+.main-right-heading h3 {
+    margin-top: 5px;
+    font-weight: normal;
+}
+.main-form {
+    width: 100%;
+}
+.main-form .name {
+    width: 100%;
+}
+.main-form .name input[type="text"]{
+    width: 48%;
+    float: left;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #bdc7d8;
+    color: #1c1e21;
+}
+.main-form .name input[type="text"]:first-child{
+    margin-right: 16px;
+}
+.main-form .name input[type="text"]::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.main-form .mobile {
+    width: 100%;
+}
+
+.main-form .mobile input[type="text"]{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #bdc7d8;
+    color: #1c1e21;
+}
+.main-form .pass input[type="password"]{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #bdc7d8;
+    color: #1c1e21;
+}
+.main-form .birthday label {
+    display: block;
+    color: #90949c;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.main-form .birthday input[type="date"] {
+    display: block;
+    border: 1px solid #bdc7d8;
+}
+
+/**********Birthday date format needs to be changed later!**********/
+
+.main-form .gender label {
+    display: block;
+    color: #90949c;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.main-form .gender {
+    font-size: 18px;
+    line-height: 18px;
+    color: #1d2129;
+}
+.main-form .gender input[type="radio"] {
+    margin-right: 7px;
+    margin-left: 5px;
+}
+.main-form .terms p {
+    color: #777;
+    font-size: 11px;
+}
+.main-form .terms p a {
+    text-decoration: none;
+    color: #385898;
+}
+.main-form .terms p a:hover {
+    text-decoration: underline;
+}
+.main-form .signup-button input {
+    border-radius: 5px;
+    color: white;
+    padding: 7px 60px;
+    font-size: 19px;
+    font-weight: bold;
+    border: 1px solid black;
+    margin: 10px 0;
+    background-color: #69a74e;
+    box-shadow: inset 0 1px 1px #a4e388;
+    
+}
+.main-form .signup-button input {
+    background: linear-gradient(#79bc64, #578843);
+}
+.main-form .celeb-signup p {
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-top: 5px;
+    cursor: 
+}
+.main-form .celeb-signup p a {
+    text-decoration: none;
+    color: #385898;
+}
+.main-form .celeb-signup p a:hover {
+    text-decoration: underline;
+}
